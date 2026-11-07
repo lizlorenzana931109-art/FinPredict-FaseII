@@ -1,0 +1,13 @@
+bloque,indicador,resultado
+Baseline,Accuracy DummyClassifier,96.16%
+Modelo seleccionado,Modelo,Regresión Logística
+Validación cruzada,PR-AUC OOF,0.3386
+Comparación estadística,Diferencia PR-AUC Logística - RF,0.0104 (IC95%: 0.0039 a 0.0174)
+Threshold,Threshold operativo,0.75
+Holdout final,Precision,25.47%
+Holdout final,Recall,75.64%
+Holdout final,F1,38.11%
+Holdout final,ROC-AUC,0.9248
+Holdout final,PR-AUC,0.3469
+Impacto operativo simulado,Reducción relativa de incumplimiento,20.95%
+Impacto operativo simulado,NNT,18.3

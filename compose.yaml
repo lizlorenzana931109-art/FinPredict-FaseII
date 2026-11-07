@@ -1,0 +1,33 @@
+
+
+# ============================================================
+# FinPredict | Fase II
+# Arquitectura reproducible con Docker Compose
+# ============================================================
+
+services:
+
+  # Backend: FastAPI y modelo de regresión logística
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    image: finpredict-api:v1
+    ports:
+      - "127.0.0.1:8002:8000"
+    restart: unless-stopped
+
+  # Frontend: aplicación Streamlit
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    image: finpredict-frontend:v1
+    ports:
+      - "127.0.0.1:8502:8501"
+    environment:
+      FINPREDICT_API_URL: "http://api:8000/predict"
+    depends_on:
+      - api
+    restart: unless-stopped
+

@@ -1,0 +1,23 @@
+
+# FinPredict - Fase II
+# Dependencias para inferencia, API y frontend
+
+# Modelo de machine learning
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.15.3
+scikit-learn==1.6.1
+joblib==1.6.0
+
+# Backend - FastAPI
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.2
+
+# Frontend - Streamlit
+streamlit==1.66.1
+requests==2.34.2
+
+# Pruebas automatizadas
+pytest==9.2.0
+httpx==0.28.1

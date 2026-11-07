@@ -1,0 +1,40 @@
+
+# ============================================================
+# FinPredict | Fase II
+# Exclusiones para control de versiones
+# ============================================================
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Cachés y archivos temporales de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Configuración local
+.vscode/
+.idea/
+
+# Variables de entorno y credenciales
+.env
+.env.*
+*.pem
+*.key
+
+# Archivos temporales
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Archivos generados durante pruebas
+.coverage
+htmlcov/
+
+# Configuración local de Streamlit
+.streamlit/secrets.toml

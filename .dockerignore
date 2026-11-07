@@ -1,0 +1,41 @@
+
+# FinPredict - Fase II
+# Archivos excluidos del contexto de Docker
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Cachés y archivos temporales de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Git y configuración local
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Evidencias y documentación académica
+docs/
+resultados/
+tests/
+
+# Notebooks y conjuntos de datos
+*.ipynb
+*.parquet
+*.csv
+
+# Archivos temporales y del sistema
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Variables de entorno y credenciales
+.env
+.env.*
